@@ -105,6 +105,10 @@ window.onload = function () {
 
     this.opponentJump = function (tile) {
       var pieceToRemove = this.canOpponentJump(tile.position);
+      gsap.to(this.element, {
+        duration: 0.5,
+        rotation: 360,
+      });
       //if there is a piece to be removed, remove it
       if (pieceToRemove) {
         pieceToRemove.remove();

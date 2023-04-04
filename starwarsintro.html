@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="text.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Flip.min.js"></script>
@@ -17,8 +17,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/MotionPathPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/PixiPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
+
 </head>
 <body>
-    
+    <div class="perspective">
+        <div class="crawl">
+            <p>STAR WARS</p>
+            <p>Bienvenue dans notre projet du jeux de dame revisité avec quelque animation dans la thématique stat wars.</p>
+            <p>Nous sommes actuellement entrain d'améliorer ce projet donc si vous avez des proposition n'hesitez pas.</p>
+            <p>Bonne découverte de notre jeux ...</p>
+        </div>
+    </div>
+
+    <script>
+        gsap.to($('.crawl'), 30, {css:{top:-2600}, ease:Linear.easeNone});
+    </script>
 </body>
 </html>
