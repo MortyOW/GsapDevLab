@@ -1,3 +1,8 @@
+
+let IamYourFather = document.getElementById('fathersound');
+let ShipDestroyed = document.getElementById('shipsound');
+
+
 window.onload = function () {
   //The initial setup
   var gameBoard = [
@@ -38,6 +43,7 @@ window.onload = function () {
     this.king = false;
     this.makeKing = function () {
       this.element.css("backgroundImage", "url('img/king" + this.player + ".png')");
+      IamYourFather.play();
       this.king = true;
     }
     //moves the piece
@@ -124,6 +130,7 @@ window.onload = function () {
         rotation: 360,
         opacity: 0,
       });
+      ShipDestroyed.play();
       
       this.element.css('display', 'none');
       if (this.player == 1) {
